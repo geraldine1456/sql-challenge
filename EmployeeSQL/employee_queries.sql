@@ -28,6 +28,7 @@ FROM  employees e
 ORDER BY emp_no	;
 
 -- 5 List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+-- included birth date for distinction if there are employees with same first and last name
 SELECT first_name, last_name, birth_date, sex
 FROM employees
 WHERE first_name = 'Hercules' AND last_name LIKE 'B%';

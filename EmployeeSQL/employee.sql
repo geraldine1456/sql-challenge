@@ -7,7 +7,7 @@ CREATE TABLE departments (
 	PRIMARY KEY (dept_no)
 );
 
--- Create Dept-Employee Table
+-- Create Deparment-Employee Table (Composite Key)
 CREATE TABLE dept_emp(
     emp_no INT NOT NULL, 
     dept_no VARCHAR (10) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE dept_manager (
     FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
 
--- Create Employee Details Table
+-- Create Employees Table
 CREATE TABLE employees (
     emp_no INT NOT NULL ,
     emp_title_id VARCHAR (10)NOT NULL,
